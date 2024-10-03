@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Security</title>
+  <style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+    }
+
+    svg {
+      width: 80vw;
+    }
+
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .squiggle-0 {
+      stroke-dasharray: 450;
+      stroke-dashoffset: 450;
+      animation: draw 10s linear forwards;
+    }
+
+    .squiggle-1 {
+      stroke-dasharray: 450;
+      stroke-dashoffset: 450;
+      animation: draw 10s 2s forwards;
+    }
+  </style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 403.44 74.33">
+  <path d="M17.8757 2.35501 18.0329 2.35501 18.1875 2.37736C18.362 2.40256 18.5314 2.46613 18.8705 2.59326L27.6143 5.8722C28.8351 6.33001 29.4455 6.5589 29.8952 6.95532C30.2927 7.30553 30.5988 7.74724 30.7871 8.24227C31.0004 8.80265 31.0004 9.45456 31.0004 10.7584V18.5574C31.0004 26.5618 22.2693 32.3836 19.0926 34.2368C18.7315 34.4475 18.551 34.5529 18.2963 34.6075C18.0985 34.6499 17.8101 34.6499 17.6123 34.6075C17.3576 34.5529 17.1771 34.4475 16.816 34.2368C13.6392 32.3836 4.9082 26.5618 4.9082 18.5574V10.7584C4.9082 9.45456 4.9082 8.80265 5.12144 8.24227C5.30981 7.74724 5.61592 7.30553 6.01331 6.95532C6.46314 6.5589 7.07353 6.33001 8.29432 5.8722L17.0381 2.59326C17.3772 2.46613 17.5466 2.40256 17.7211 2.37736Z" fill="none" stroke="#00A336" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="squiggle-0"/>
+
+  <path d="M19.5851 11.2189L14.6928 16.1112L21.2158 19.3728L16.3235 24.2651" fill="none" stroke="#00A336" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="squiggle-1"/>
+</svg>
+  
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Rect</title>
+  <style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+    }
+
+    svg {
+      width: 80vw;
+    }
+
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .squiggle-0 {
+      stroke-dasharray: 450;
+      stroke-dashoffset: 450;
+      animation: draw 10s linear forwards;
+    }
+
+    .squiggle-1 {
+      stroke-dasharray: 450;
+      stroke-dashoffset: 450;
+      animation: draw 10s linear forwards;
+    }
+  </style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 403.44 74.33">
+  <path d="M7.12 14.8H28.88C30.6722 14.8 31.5683 14.8 32.2528 14.4512C32.8549 14.1444 33.3445 13.6549 33.6512 13.0528C34 12.3683 34 11.4722 34 9.68V7.12C34 5.32784 34 4.43174 33.6512 3.74723C33.3445 3.1451 32.8549 2.65557 32.2528 2.34878C31.5683 2 30.6722 2 28.88 2H7.12C5.32782 2 4.43174 2 3.74723 2.34878C3.1451 2.65557 2.65557 3.1451 2.34878 3.74723C2 4.43174 2 5.32782 2 7.12V9.68C2 11.4722 2 12.3683 2.34878 13.0528C2.65557 13.6549 3.1451 14.1444 3.74723 14.4512C4.43174 14.8 5.32784 14.8 7.12 14.8M8.4 8.4H8.416Z" fill="none" stroke="#00A336" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="squiggle-0"/>
+
+  <path d="M7.12 34H28.88C30.6722 34 31.5683 34 32.2528 33.6512C32.8549 33.3445 33.3445 32.8549 33.6512 32.2528C34 31.5683 34 30.6722 34 28.88V26.32C34 24.5278 34 23.6317 33.6512 22.9472C33.3445 22.3451 32.8549 21.8555 32.2528 21.5488C31.5683 21.2 30.6722 21.2 28.88 21.2H7.12C5.32782 21.2 4.43174 21.2 3.74723 21.5488C3.1451 21.8555 2.65557 22.3451 2.34878 22.9472C2 23.6317 2 24.5278 2 26.32V28.88C2 30.6722 2 31.5683 2.34878 32.2528C2.65557 32.8549 3.1451 33.3445 3.74723 33.6512C4.43174 34 5.32784 34 7.12 34M8.4 27.6H8.416Z" fill="none" stroke="#00A336" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="squiggle-1"/>
+</svg>
+  
+</body>
+</html>

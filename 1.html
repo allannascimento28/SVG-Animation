@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Checkmark</title>
+  <style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 95vh;
+    }
+    svg {
+        opacity: 0;
+        transition: all 0.1s ease-in-out;
+        transform: scale(2.5);
+    }
+  </style>
+
+</head>
+<body>
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 0 -->
+    <path d="M5.32257 19.3652 5.14115 20.0424 4.7323 20.5764L2.52704 23.4489C1.82432 24.3636 1.82432 25.6364 2.52704 26.5486L4.7323 29.4211" stroke="#00A336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-1" />
+    <path d="M10.7757 10.2804 10.2799 10.7762 9.65643 11.0368L6.31405 12.4168C5.24846 12.8589 4.61219 13.9603 4.76296 15.1026L5.2357 18.6956" stroke="#00A336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-2" />
+    <path d="M20.0413 5.14132 19.3642 5.32277 18.6947 5.2359L15.1019 4.76313C13.9596 4.61235 12.8583 5.24866 12.4162 6.3143L11.0363 9.65687" stroke="#00A336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-3" />
+    <path d="M30.6331 5.32277 29.956 5.14132 29.4219 4.73245L26.5497 2.52707C25.635 1.82431 24.3624 1.82431 23.4502 2.52707L20.578 4.73245" stroke="#00A336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-4" />
+    <path d="M39.7174 10.7736 39.2218 10.2779 38.9637 9.65176L37.5812 6.30919C37.1417 5.24356 36.0377 4.60724 34.8955 4.758L31.3026 5.23077" stroke="#00A336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-5" />
+    <path d="M44.8563 20.0398 44.6748 19.3626 44.7643 18.6931L45.237 15.1001C45.3878 13.9578 44.7514 12.8563 43.6858 12.4142L40.3435 11.0317" stroke="#00A336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-6" />
+    <path d="M44.6824 30.6782 44.8869 29.9167 45.3494 29.3162L47.473 26.5486C48.1757 25.6337 48.1757 24.3611 47.473 23.4489L45.2675 20.5764" stroke="#00A336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-7" />
+    <path d="M39.2218 39.717 39.7174 39.2214 40.3435 38.9631L43.6858 37.5805C44.7514 37.141 45.3878 36.0372 45.237 34.8948L44.7822 31.4322" stroke="#00A336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-8" />
+    <path d="M29.956 44.8561 30.6331 44.6747 31.3026 44.7641L34.8955 45.2368C36.0377 45.3877 37.1391 44.7513 37.5812 43.6857L38.9637 40.3431" stroke="#00A336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-9" />
+    <path d="M19.3182 44.6823 20.0797 44.8867 20.6801 45.3492L23.4477 47.4728C24.3624 48.1757 25.635 48.1757 26.5472 47.4728L29.4194 45.2676" stroke="#00A336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-10" />
+    <path d="M10.2825 39.2239 10.7782 39.7195 11.0363 40.3456L12.4188 43.6882C12.8583 44.754 13.9622 45.3902 15.1044 45.2395L18.5643 44.7821" stroke="#00A336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-11" />
+    <path d="M5.1437 29.9577 5.32512 30.6348 5.2357 31.3043L4.76296 34.8974C4.61219 36.0398 5.24846 37.141 6.31405 37.5833L9.65643 38.9658" stroke="#00A336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-12" />
+    <!-- Checkmark  -->
+    <path d="M18.1 25L22.7 29.6" stroke="#00A336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-13" />
+    <path d="M22.7 29.6L33.05 19.25" stroke="#00A336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-14" />
+
+<style>
+
+    @-webkit-keyframes animate-svg-fill-1 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      @keyframes animate-svg-fill-1 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      .active .svg-elem-1 {
+        -webkit-animation: animate-svg-fill-1 0.1s linear 0.1s both;
+                animation: animate-svg-fill-1 0.1s linear 0.1s both;
+      }
+      
+      @-webkit-keyframes animate-svg-fill-2 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      @keyframes animate-svg-fill-2 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      .active .svg-elem-2 {
+        -webkit-animation: animate-svg-fill-2 0.1s linear 0.15s both;
+                animation: animate-svg-fill-2 0.1s linear 0.15s both;
+      }
+      
+      @-webkit-keyframes animate-svg-fill-3 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      @keyframes animate-svg-fill-3 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      .active .svg-elem-3 {
+        -webkit-animation: animate-svg-fill-3 0.1s linear 0.2s both;
+                animation: animate-svg-fill-3 0.1s linear 0.2s both;
+      }
+      
+      @-webkit-keyframes animate-svg-fill-4 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      @keyframes animate-svg-fill-4 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      .active .svg-elem-4 {
+        -webkit-animation: animate-svg-fill-4 0.1s linear 0.25s both;
+                animation: animate-svg-fill-4 0.1s linear 0.25s both;
+      }
+      
+      @-webkit-keyframes animate-svg-fill-5 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      @keyframes animate-svg-fill-5 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      .active .svg-elem-5 {
+        -webkit-animation: animate-svg-fill-5 0.1s linear 0.3s both;
+                animation: animate-svg-fill-5 0.1s linear 0.3s both;
+      }
+      
+      @-webkit-keyframes animate-svg-fill-6 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      @keyframes animate-svg-fill-6 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      .active .svg-elem-6 {
+        -webkit-animation: animate-svg-fill-6 0.1s linear 0.35s both;
+                animation: animate-svg-fill-6 0.1s linear 0.35s both;
+      }
+      
+      @-webkit-keyframes animate-svg-fill-7 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      @keyframes animate-svg-fill-7 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      .active .svg-elem-7 {
+        -webkit-animation: animate-svg-fill-7 0.1s linear 0.4s both;
+                animation: animate-svg-fill-7 0.1s linear 0.4s both;
+      }
+      
+      @-webkit-keyframes animate-svg-fill-8 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      @keyframes animate-svg-fill-8 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      .active .svg-elem-8 {
+        -webkit-animation: animate-svg-fill-8 0.1s linear 0.45s both;
+                animation: animate-svg-fill-8 0.1s linear 0.45s both;
+      }
+      
+      @-webkit-keyframes animate-svg-fill-9 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      @keyframes animate-svg-fill-9 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      .active .svg-elem-9 {
+        -webkit-animation: animate-svg-fill-9 0.1s linear 0.5s both;
+                animation: animate-svg-fill-9 0.1s linear 0.5s both;
+      }
+      
+      @-webkit-keyframes animate-svg-fill-10 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      @keyframes animate-svg-fill-10 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      .active .svg-elem-10 {
+        -webkit-animation: animate-svg-fill-10 0.1s linear 0.55s both;
+                animation: animate-svg-fill-10 0.1s linear 0.55s both;
+      }
+      
+      @-webkit-keyframes animate-svg-fill-11 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      @keyframes animate-svg-fill-11 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      .active .svg-elem-11 {
+        -webkit-animation: animate-svg-fill-11 0.1s linear 0.6s both;
+                animation: animate-svg-fill-11 0.1s linear 0.6s both;
+      }
+      
+      @-webkit-keyframes animate-svg-fill-12 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      @keyframes animate-svg-fill-12 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      .active .svg-elem-12 {
+        -webkit-animation: animate-svg-fill-12 0.1s linear 0.65s both;
+                animation: animate-svg-fill-12 0.1s linear 0.65s both;
+      }
+
+      @-webkit-keyframes animate-svg-fill-13 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      @keyframes animate-svg-fill-13 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      .active .svg-elem-13 {
+        -webkit-animation: animate-svg-fill-13 0.1s linear 0.7s both;
+                animation: animate-svg-fill-13 0.1s linear 0.7s both;
+      }
+
+      @-webkit-keyframes animate-svg-fill-14 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      @keyframes animate-svg-fill-14 {
+        0% {
+          stroke: transparent;
+        }
+      
+        100% {
+          stroke: #00A336;
+        }
+      }
+      
+      .active .svg-elem-14 {
+        -webkit-animation: animate-svg-fill-14 0.1s linear 0.75s both;
+                animation: animate-svg-fill-14 0.1s linear 0.75s both;
+      }
+
+svg {
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+svg.active {
+    opacity: 1;
+}
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', () =&gt; {
+        const element = document.querySelector('svg');
+
+        function toggleClass() {
+            element.classList.add('active');
+
+            setTimeout(() =&gt; {
+                element.classList.remove('active');
+            }, 4000);
+        }
+
+        // Initial delay of 1 second before the first activation
+        setTimeout(() =&gt; {
+            toggleClass();
+
+            // Set interval to toggle class every 10 seconds
+            setInterval(() =&gt; {
+                toggleClass();
+            }, 5000);
+        }, 1000);
+    });
+</script>
+</svg>
+</body>
+</html>
